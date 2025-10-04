@@ -1,0 +1,153 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    
+    .courses-section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .courses-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #004aad;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-card .content {
+      padding: 1.2rem;
+    }
+
+    .course-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #004aad;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+  
+    .feedback-section {
+      background: #e9f0fb;
+      padding: 3rem 2rem;
+      margin-top: 4rem;
+    }
+
+    .feedback-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #004aad;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 0.9rem;
+      background: #004aad;
+      color: #fff;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #00337a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004aad;
+      color: #fff;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .course-card img {
+        height: 150px;
+      }
+    }
